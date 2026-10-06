@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rim-bahadur-oli.vercel.app/sitemap.xml
