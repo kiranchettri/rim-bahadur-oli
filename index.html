@@ -8,17 +8,19 @@
     <meta name="keywords" content="Rim Bahadur Oli, personal portfolio, Rolpa Nepal, portfolio website, profile, gallery, blog, contact, Rim Bahadur Oli photo gallery" />
     <meta name="author" content="Rim Bahadur Oli" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://rim-bahadur-oli.vercel.app/" />
     <meta property="og:title" content="Rim Bahadur Oli | Personal Portfolio" />
     <meta property="og:description" content="Personal portfolio website of Rim Bahadur Oli from Rolpa, Nepal, featuring story, gallery, blog, and contact information." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./profile%20logo.jpeg" />
+    <meta property="og:url" content="https://rim-bahadur-oli.vercel.app/" />
+    <meta property="og:image" content="https://rim-bahadur-oli.vercel.app/profile%20logo.jpeg" />
     <meta property="og:image:alt" content="Rim Bahadur Oli personal profile logo and portrait" />
     <meta property="og:site_name" content="Rim Bahadur Oli" />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Rim Bahadur Oli | Personal Portfolio" />
     <meta name="twitter:description" content="Personal portfolio website of Rim Bahadur Oli from Rolpa, Nepal." />
-    <meta name="twitter:image" content="./profile%20logo.jpeg" />
+    <meta name="twitter:image" content="https://rim-bahadur-oli.vercel.app/profile%20logo.jpeg" />
     <meta name="twitter:image:alt" content="Rim Bahadur Oli personal portfolio image" />
     <script type="application/ld+json">
       {
@@ -45,7 +47,7 @@
         ],
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://localhost:8000/"
+          "@id": "https://rim-bahadur-oli.vercel.app/"
         },
         "hasPart": [
           {
@@ -1383,7 +1385,9 @@
                 <h3>Let's Connect</h3>
                 <p>If you would like to connect with me, feel free to send a message.</p>
 
-                <form class="contact-form" id="contactForm" novalidate>
+                <form class="contact-form" id="contactForm" method="POST" action="https://api.web3forms.com/submit" novalidate>
+                  <input type="hidden" name="access_key" value="0234c788-3949-4b25-834e-842c344522b4" />
+                  <input type="hidden" name="subject" value="New Contact Message from Rim Bahadur Oli Portfolio" />
                   <div class="field-row">
                     <div>
                       <label for="name">Full Name</label>
@@ -1775,8 +1779,9 @@
         document.getElementById('galleryLightbox').classList.remove('open');
       });
 
-      document.getElementById('contactForm').addEventListener('submit', (event) => {
+      document.getElementById('contactForm').addEventListener('submit', async (event) => {
         event.preventDefault();
+        const form = event.target;
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
         const message = document.getElementById('message').value.trim();
@@ -1791,8 +1796,34 @@
           return;
         }
 
-        showToast('Message sent successfully!');
-        event.target.reset();
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+
+        try {
+          const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+              Accept: 'application/json'
+            }
+          });
+
+          const result = await response.json();
+
+          if (result.success) {
+            showToast('Message sent successfully!');
+            form.reset();
+          } else {
+            showToast(result.message || 'Unable to send message. Please try again.');
+          }
+        } catch (error) {
+          showToast('Network error. Please try again later.');
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = originalText;
+        }
       });
 
       const observer = new IntersectionObserver((entries) => {
