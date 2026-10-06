@@ -1,0 +1,1860 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rim Bahadur Oli | Personal Portfolio</title>
+    <meta name="description" content="Rim Bahadur Oli personal portfolio website featuring profile, gallery, blog, and contact details from Rolpa, Nepal." />
+    <meta name="keywords" content="Rim Bahadur Oli, personal portfolio, Rolpa Nepal, portfolio website, profile, gallery, blog, contact, Rim Bahadur Oli photo gallery" />
+    <meta name="author" content="Rim Bahadur Oli" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:title" content="Rim Bahadur Oli | Personal Portfolio" />
+    <meta property="og:description" content="Personal portfolio website of Rim Bahadur Oli from Rolpa, Nepal, featuring story, gallery, blog, and contact information." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./profile%20logo.jpeg" />
+    <meta property="og:image:alt" content="Rim Bahadur Oli personal profile logo and portrait" />
+    <meta property="og:site_name" content="Rim Bahadur Oli" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rim Bahadur Oli | Personal Portfolio" />
+    <meta name="twitter:description" content="Personal portfolio website of Rim Bahadur Oli from Rolpa, Nepal." />
+    <meta name="twitter:image" content="./profile%20logo.jpeg" />
+    <meta name="twitter:image:alt" content="Rim Bahadur Oli personal portfolio image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rim Bahadur Oli",
+        "description": "Personal portfolio of Rim Bahadur Oli from Rolpa, Nepal.",
+        "image": [
+          "./profile%20logo.jpeg",
+          "./WhatsApp%20Image%202026-10-06%20at%209.39.21%20AM.jpeg",
+          "./gallery.jpeg"
+        ],
+        "email": "mailto:olir4310@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rolpa",
+          "addressCountry": "NP"
+        },
+        "sameAs": [
+          "https://www.facebook.com/share/1EDwouFdbw/",
+          "https://www.tiktok.com/@ramesholi570?_r=1&_t=ZS-9AJt6zjMwVg",
+          "https://youtube.com/@user-nt7zp8ix9l?si=-1UWv7kTSvpOIxx2",
+          "https://anamaction.com"
+        ],
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http://localhost:8000/"
+        },
+        "hasPart": [
+          {
+            "@type": "ImageObject",
+            "name": "Rim Bahadur Oli portrait photo",
+            "url": "./profile%20logo.jpeg"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "Rim Bahadur Oli portrait from Rolpa, Nepal",
+            "url": "./WhatsApp%20Image%202026-10-06%20at%209.39.21%20AM.jpeg"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "Rim Bahadur Oli gallery image in nature setting",
+            "url": "./gallery.jpeg"
+          }
+        ]
+      }
+    </script>
+    <style>
+      :root {
+        --bg: #f3f7fc;
+        --bg-2: #edf5ff;
+        --surface: rgba(255, 255, 255, 0.8);
+        --surface-strong: #ffffff;
+        --text: #101827;
+        --muted: #5d6b82;
+        --primary: #1d5d8c;
+        --primary-2: #0d3d68;
+        --accent: #8ac7ff;
+        --line: rgba(15, 23, 42, 0.08);
+        --shadow: 0 28px 60px rgba(15, 23, 42, 0.12);
+        --header-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+        --success: #1ca676;
+        --radius: 24px;
+      }
+
+      body.dark-theme {
+        --bg: #0b1220;
+        --bg-2: #101b2f;
+        --surface: rgba(15, 23, 42, 0.72);
+        --surface-strong: #111827;
+        --text: #edf2ff;
+        --muted: #afbdd7;
+        --primary: #8ec6ff;
+        --primary-2: #e3f0ff;
+        --line: rgba(148, 163, 184, 0.18);
+        --shadow: 0 26px 60px rgba(2, 6, 23, 0.5);
+        --header-shadow: 0 12px 28px rgba(2, 6, 23, 0.42);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(138, 199, 255, 0.42), transparent 26%),
+          radial-gradient(circle at bottom right, rgba(29, 93, 140, 0.12), transparent 30%),
+          var(--bg);
+        color: var(--text);
+        transition: background-color 0.25s ease, color 0.25s ease;
+      }
+
+      a { text-decoration: none; color: inherit; }
+      button, input, textarea { font: inherit; }
+      img { width: 100%; display: block; }
+
+      .container { width: min(1180px, calc(100% - 30px)); margin: 0 auto; }
+      .section { padding: 100px 0; }
+      .eyebrow {
+        display: inline-flex;
+        padding: 7px 13px;
+        border-radius: 999px;
+        background: rgba(29, 93, 140, 0.08);
+        border: 1px solid var(--line);
+        color: var(--primary);
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .section-head {
+        max-width: 760px;
+        margin: 0 auto 34px;
+        text-align: center;
+      }
+      .section-head h2 {
+        margin: 18px 0 10px;
+        font-size: clamp(2rem, 4vw, 3.1rem);
+        letter-spacing: -0.06em;
+      }
+      .section-subtitle {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.02rem;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 60;
+        backdrop-filter: blur(18px);
+        background: rgba(243, 247, 252, 0.72);
+        border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+        box-shadow: var(--header-shadow);
+      }
+      body.dark-theme header { background: rgba(11, 18, 32, 0.74); }
+
+      .nav-wrap {
+        width: min(1180px, calc(100% - 30px));
+        margin: 0 auto;
+        min-height: 82px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+      }
+      .brand-mark {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 2px solid rgba(255, 255, 255, 0.9);
+        box-shadow: 0 12px 24px rgba(15, 23, 42, 0.1);
+        background: linear-gradient(135deg, #dfeefc, #c9ddf6);
+      }
+      .brand-mark img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .brand-name {
+        font-size: 0.9rem;
+        color: var(--text);
+      }
+
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .nav-menu a {
+        position: relative;
+        padding: 8px 0;
+        transition: color 0.2s ease;
+      }
+      .nav-menu a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 2px;
+        background: var(--primary);
+        border-radius: 999px;
+        transition: width 0.2s ease;
+      }
+      .nav-menu a:hover,
+      .nav-menu a.active { color: var(--text); }
+      .nav-menu a:hover::after,
+      .nav-menu a.active::after { width: 100%; }
+
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .icon-btn,
+      .user-toggle,
+      .hamburger {
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.58);
+        color: var(--text);
+        border-radius: 14px;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .icon-btn:hover,
+      .user-toggle:hover,
+      .hamburger:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+      }
+      .icon-btn {
+        width: 42px;
+        height: 42px;
+        display: grid;
+        place-items: center;
+      }
+      .user-toggle {
+        width: 48px;
+        height: 48px;
+        display: grid;
+        place-items: center;
+        padding: 0;
+      }
+      .user-avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, #183d63, #2d79be);
+        color: white;
+        font-size: 0.78rem;
+        font-weight: 800;
+      }
+      .hamburger { display: none; width: 42px; height: 42px; font-size: 1.3rem; }
+
+      .hero { padding-top: 70px; }
+      .hero-inner {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 42px;
+        align-items: center;
+      }
+      .badge {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(29, 93, 140, 0.08);
+        border: 1px solid var(--line);
+        color: var(--primary);
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .hero-copy h1 {
+        margin: 18px 0 14px;
+        font-size: clamp(2.8rem, 5vw, 5rem);
+        line-height: 0.98;
+        letter-spacing: -0.06em;
+      }
+      .hero-subtitle {
+        margin: 0 0 18px;
+        color: var(--muted);
+        font-size: 1.08rem;
+        font-weight: 700;
+      }
+      .hero-copy p {
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin: 26px 0 14px;
+      }
+      .primary-btn,
+      .secondary-btn,
+      .ghost-btn,
+      .link-btn,
+      .social-btn,
+      .social-mini {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 14px;
+        transition: all 0.22s ease;
+        cursor: pointer;
+      }
+      .primary-btn,
+      .secondary-btn,
+      .ghost-btn {
+        min-height: 48px;
+        padding: 0 20px;
+        font-weight: 800;
+      }
+      .primary-btn {
+        background: linear-gradient(135deg, var(--primary), var(--primary-2));
+        color: white;
+        box-shadow: 0 16px 32px rgba(29, 93, 140, 0.22);
+      }
+      .secondary-btn {
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid var(--line);
+        color: var(--text);
+      }
+      .ghost-btn {
+        background: transparent;
+        border: 1px solid var(--line);
+        color: var(--text);
+      }
+      .primary-btn:hover,
+      .secondary-btn:hover,
+      .ghost-btn:hover,
+      .link-btn:hover,
+      .social-btn:hover,
+      .social-mini:hover {
+        transform: translateY(-2px);
+      }
+
+      .scroll-indicator {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 12px;
+        color: var(--muted);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .mouse {
+        width: 22px;
+        height: 36px;
+        border: 2px solid rgba(29, 93, 140, 0.76);
+        border-radius: 999px;
+        position: relative;
+      }
+      .mouse::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 7px;
+        width: 5px;
+        height: 8px;
+        background: var(--primary);
+        border-radius: 999px;
+        transform: translateX(-50%);
+        animation: scroll 1.5s infinite;
+      }
+      @keyframes scroll {
+        0% { opacity: 0; transform: translate(-50%, -4px); }
+        30% { opacity: 1; }
+        100% { opacity: 0; transform: translate(-50%, 10px); }
+      }
+
+      .hero-visual { display: flex; justify-content: center; }
+      .profile-card {
+        width: min(100%, 430px);
+        background: linear-gradient(180deg, rgba(255,255,255,0.82), rgba(236,245,255,0.85));
+        border: 1px solid rgba(29, 93, 140, 0.08);
+        border-radius: 32px;
+        box-shadow: var(--shadow);
+        padding: 26px 22px 20px;
+        backdrop-filter: blur(10px);
+      }
+      body.dark-theme .profile-card { background: rgba(17, 24, 39, 0.76); }
+      .profile-art {
+        position: relative;
+        width: 220px;
+        height: 220px;
+        margin: 0 auto 20px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 10px solid rgba(255,255,255,0.75);
+        box-shadow: 0 18px 38px rgba(15, 23, 42, 0.18);
+      }
+      .profile-art img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .profile-card h3 {
+        margin: 0 0 14px;
+        text-align: center;
+        font-size: clamp(1.7rem, 2.4vw, 2.1rem);
+        letter-spacing: -0.05em;
+      }
+      .meta {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        font-size: 0.82rem;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .status-bar {
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+      .status-item {
+        padding: 14px 10px 12px;
+        border-radius: 18px;
+        background: rgba(29, 93, 140, 0.05);
+        border: 1px solid var(--line);
+        text-align: center;
+      }
+      .status-item strong {
+        display: block;
+        font-size: 1.1rem;
+      }
+      .status-item span {
+        color: var(--muted);
+        font-size: 0.77rem;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .stat-card {
+        background: rgba(255,255,255,0.72);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
+        padding: 24px 20px;
+        text-align: center;
+      }
+      body.dark-theme .stat-card { background: rgba(17, 24, 39, 0.7); }
+      .stat-value {
+        font-size: clamp(1.7rem, 3vw, 2.5rem);
+        font-weight: 800;
+        letter-spacing: -0.06em;
+      }
+      .stat-label { margin-top: 8px; color: var(--muted); }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 0.92fr 1.08fr;
+        gap: 32px;
+        align-items: center;
+      }
+      .about-photo {
+        position: relative;
+        min-height: 500px;
+        background: linear-gradient(135deg, rgba(29, 93, 140, 0.16), rgba(29, 93, 140, 0.04));
+        border: 1px solid var(--line);
+        border-radius: 32px;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+      }
+      .avatar-box {
+        width: min(100%, 380px);
+        height: 440px;
+        border-radius: 30px;
+        overflow: hidden;
+        background: linear-gradient(135deg, #dfeefc, #bfdbf7);
+      }
+      .avatar-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .about-copy h3 { font-size: 2rem; margin-bottom: 12px; }
+      .about-copy p { color: var(--muted); line-height: 1.8; }
+      .info-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 28px;
+      }
+      .info-card {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        background: rgba(255,255,255,0.62);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 16px 18px;
+      }
+      body.dark-theme .info-card { background: rgba(17,24,39,0.7); }
+      .info-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 14px;
+        background: rgba(29, 93, 140, 0.08);
+        display: grid;
+        place-items: center;
+        font-size: 1.3rem;
+      }
+      .label {
+        display: block;
+        color: var(--muted);
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      .info-card strong { font-size: 0.97rem; }
+
+      .journey-wrap { position: relative; }
+      .timeline {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 20px;
+      }
+      .timeline-item {
+        position: relative;
+        background: rgba(255,255,255,0.7);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 22px 18px;
+        box-shadow: 0 14px 30px rgba(15, 23, 42, 0.04);
+      }
+      body.dark-theme .timeline-item { background: rgba(17,24,39,0.7); }
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: 18px;
+        top: -10px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: var(--primary);
+        box-shadow: 0 0 0 8px rgba(29, 93, 140, 0.12);
+      }
+      .timeline-label {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: var(--primary);
+        font-size: 0.7rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .timeline-item h3 { margin: 0 0 8px; font-size: 1.15rem; }
+      .timeline-item p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .video-grid,
+      .blog-grid,
+      .social-grid,
+      .gallery-grid {
+        display: grid;
+        gap: 22px;
+      }
+      .video-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .blog-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .social-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .gallery-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+      .video-card,
+      .blog-card,
+      .social-card,
+      .gallery-item {
+        background: rgba(255,255,255,0.74);
+        border: 1px solid var(--line);
+        border-radius: 26px;
+        overflow: hidden;
+        box-shadow: 0 12px 28px rgba(15,23,42,0.04);
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      }
+      .video-card:hover,
+      .blog-card:hover,
+      .social-card:hover,
+      .gallery-item:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 22px 42px rgba(15,23,42,0.09);
+        border-color: rgba(29, 93, 140, 0.18);
+      }
+
+      body.dark-theme .video-card,
+      body.dark-theme .blog-card,
+      body.dark-theme .social-card,
+      body.dark-theme .gallery-item { background: rgba(17,24,39,0.7); }
+
+      .video-thumb,
+      .blog-thumb,
+      .gallery-thumb {
+        position: relative;
+        min-height: 220px;
+        background-size: cover;
+        background-position: center;
+      }
+      .video-thumb::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(7, 13, 24, 0.18);
+      }
+      .play {
+        position: absolute;
+        inset: 50% auto auto 50%;
+        transform: translate(-50%, -50%);
+        width: 64px;
+        height: 64px;
+        border: 0;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.9);
+        color: var(--primary);
+        font-size: 1.6rem;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .video-body,
+      .blog-body,
+      .social-card {
+        padding: 18px 18px 20px;
+      }
+      .video-topline,
+      .blog-topline {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        color: var(--muted);
+        font-size: 0.72rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      .video-card h3,
+      .blog-card h3,
+      .social-card h4 {
+        margin: 12px 0 10px;
+        font-size: 1.15rem;
+      }
+      .video-card p,
+      .blog-card p,
+      .social-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 30px;
+        padding: 0 10px;
+        border-radius: 999px;
+        background: rgba(29, 93, 140, 0.08);
+        color: var(--primary);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .card-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16px;
+        gap: 12px;
+      }
+      .link-btn {
+        min-height: 36px;
+        padding: 0 12px;
+        color: var(--primary);
+        border: 1px solid rgba(29, 93, 140, 0.15);
+        background: rgba(29, 93, 140, 0.04);
+        font-weight: 700;
+      }
+      .social-btn,
+      .social-mini {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 0 12px;
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.5);
+        color: var(--text);
+        font-weight: 800;
+      }
+      .social-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 16px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, rgba(29,93,140,0.14), rgba(138,199,255,0.22));
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: var(--primary);
+      }
+      .social-card .link-btn {
+        margin-top: 16px;
+      }
+
+      .contact-wrap {
+        background: rgba(255,255,255,0.7);
+        border: 1px solid var(--line);
+        border-radius: 32px;
+        padding: 28px;
+        box-shadow: var(--shadow);
+      }
+      body.dark-theme .contact-wrap { background: rgba(17,24,39,0.7); }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 26px;
+      }
+      .contact-left h3 {
+        font-size: clamp(2rem, 3vw, 2.8rem);
+        margin: 12px 0 8px;
+        letter-spacing: -0.05em;
+      }
+      .contact-left p,
+      .contact-info .meta-box small {
+        color: var(--muted);
+      }
+      .contact-form {
+        margin-top: 24px;
+        display: grid;
+        gap: 18px;
+      }
+      .field-row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 700;
+      }
+      input,
+      textarea {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: rgba(255,255,255,0.8);
+        color: var(--text);
+        padding: 14px 15px;
+        outline: none;
+      }
+      textarea { min-height: 160px; resize: vertical; }
+      input:focus,
+      textarea:focus {
+        border-color: rgba(29, 93, 140, 0.38);
+        box-shadow: 0 0 0 4px rgba(29, 93, 140, 0.08);
+      }
+      .contact-info {
+        display: grid;
+        gap: 16px;
+        align-content: center;
+      }
+      .meta-box {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 18px 18px;
+        background: rgba(255,255,255,0.7);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+      }
+      .meta-box .icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        background: rgba(29, 93, 140, 0.08);
+        display: grid;
+        place-items: center;
+        font-size: 1.4rem;
+      }
+      .meta-box strong {
+        display: block;
+        margin-top: 4px;
+      }
+
+      .blog-toolbar {
+        margin-bottom: 24px;
+      }
+      #blogSearch {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 14px 16px;
+        background: rgba(255,255,255,0.72);
+        color: var(--text);
+      }
+
+      .gallery-item {
+        position: relative;
+        cursor: pointer;
+      }
+      .gallery-thumb {
+        min-height: 220px;
+        background-size: cover;
+        background-position: center;
+      }
+      .zoom {
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+        width: 42px;
+        height: 42px;
+        border: 0;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.9);
+        color: var(--primary);
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+
+      footer {
+        padding: 34px 0 20px;
+        border-top: 1px solid var(--line);
+        background: rgba(255,255,255,0.2);
+      }
+      body.dark-theme footer { background: rgba(10,14,22,0.28); }
+      .footer-inner {
+        width: min(1180px, calc(100% - 30px));
+        margin: 0 auto;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr 0.8fr;
+        gap: 24px;
+      }
+      .footer-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 800;
+        letter-spacing: 0.03em;
+      }
+      .footer-text {
+        margin: 14px 0 0;
+        color: var(--muted);
+      }
+      .footer-nav,
+      .social-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .footer-nav a,
+      .social-row a {
+        color: var(--muted);
+      }
+      .footer-bottom {
+        margin-top: 22px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .user-panel {
+        position: fixed;
+        top: 92px;
+        right: 20px;
+        width: min(320px, calc(100vw - 32px));
+        background: rgba(255,255,255,0.84);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+        transform: translateY(-16px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.25s ease;
+        z-index: 120;
+      }
+      body.dark-theme .user-panel { background: rgba(17,24,39,0.85); }
+      .user-panel.open {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+      .panel-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 18px 12px;
+      }
+      .panel-profile { display: flex; align-items: center; gap: 10px; }
+      .mini-avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, #183d63, #2d79be);
+        color: white;
+        font-weight: 800;
+      }
+      .panel-close {
+        border: 0;
+        background: rgba(29,93,140,0.08);
+        width: 34px;
+        height: 34px;
+        border-radius: 11px;
+        color: var(--text);
+        cursor: pointer;
+      }
+      .panel-body { padding: 0 18px 18px; }
+      .panel-links {
+        display: grid;
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+      .panel-links a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 14px;
+        background: rgba(29, 93, 140, 0.04);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        font-weight: 700;
+      }
+      .panel-socials {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .panel-socials a {
+        display: grid;
+        place-items: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        background: rgba(29, 93, 140, 0.06);
+        border: 1px solid var(--line);
+        font-weight: 800;
+        color: var(--text);
+      }
+
+      .modal,
+      .lightbox {
+        position: fixed;
+        inset: 0;
+        background: rgba(9, 15, 23, 0.72);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 180;
+      }
+      .modal.open,
+      .lightbox.open {
+        opacity: 1;
+        visibility: visible;
+      }
+      .modal-box {
+        width: min(860px, 100%);
+        background: var(--surface-strong);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+      }
+      body.dark-theme .modal-box { background: #0f172a; }
+      .modal-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 22px;
+        border-bottom: 1px solid var(--line);
+      }
+      .modal-head h3 { margin: 0; }
+      .close-btn,
+      .lightbox-btn {
+        border: 0;
+        background: rgba(29, 93, 140, 0.08);
+        width: 38px;
+        height: 38px;
+        border-radius: 12px;
+        cursor: pointer;
+        color: var(--text);
+      }
+      .modal-body {
+        padding: 20px 22px 24px;
+      }
+      .video-frame {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border: 0;
+        border-radius: 18px;
+        background: #000;
+      }
+      .modal-body p {
+        margin: 18px 0 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+      .lightbox-inner {
+        position: relative;
+        max-width: min(90vw, 850px);
+        max-height: 88vh;
+        display: grid;
+        place-items: center;
+      }
+      .lightbox-image {
+        max-width: 100%;
+        max-height: 85vh;
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+      }
+      .lightbox-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255,255,255,0.92);
+        font-size: 1.5rem;
+      }
+      .lightbox-btn.prev { left: -18px; }
+      .lightbox-btn.next { right: -18px; }
+      .lightbox-btn.close {
+        top: -18px;
+        right: -18px;
+        transform: none;
+      }
+
+      .back-to-top {
+        position: fixed;
+        right: 22px;
+        bottom: 22px;
+        width: 52px;
+        height: 52px;
+        border: 0;
+        border-radius: 16px;
+        background: linear-gradient(135deg, var(--primary), var(--primary-2));
+        color: white;
+        box-shadow: 0 16px 30px rgba(29, 93, 140, 0.25);
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(16px);
+        transition: all 0.25s ease;
+        z-index: 110;
+      }
+      .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .toast {
+        position: fixed;
+        left: 50%;
+        bottom: 24px;
+        transform: translateX(-50%) translateY(20px);
+        background: rgba(17,24,39,0.88);
+        color: white;
+        border-radius: 999px;
+        padding: 10px 16px;
+        font-size: 0.85rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.25s ease;
+        z-index: 200;
+      }
+      .toast.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+      }
+
+      @media (max-width: 980px) {
+        .hero-inner,
+        .about-grid,
+        .contact-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+        .timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .social-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .nav-menu { display: none; }
+        .hamburger { display: grid; place-items: center; }
+        .nav-menu.open {
+          display: flex;
+          position: absolute;
+          top: 100%;
+          left: 16px;
+          right: 16px;
+          background: rgba(255,255,255,0.86);
+          border: 1px solid var(--line);
+          border-radius: 18px;
+          padding: 18px 16px;
+          flex-direction: column;
+          align-items: flex-start;
+          box-shadow: var(--shadow);
+        }
+        body.dark-theme .nav-menu.open { background: rgba(17,24,39,0.88); }
+      }
+
+      @media (max-width: 640px) {
+        .section { padding: 80px 0; }
+        .hero-copy h1 { font-size: 2.6rem; }
+        .stats-grid, .info-list, .timeline, .video-grid, .blog-grid, .social-grid, .field-row, .gallery-grid {
+          grid-template-columns: 1fr;
+        }
+        .brand-name { font-size: 0.78rem; }
+        .cta-row { flex-direction: column; align-items: stretch; }
+        .primary-btn, .secondary-btn, .ghost-btn { width: 100%; }
+        .user-panel {
+          right: 16px;
+          left: 16px;
+          width: auto;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .nav-wrap { min-height: 72px; gap: 10px; }
+        .brand { gap: 8px; min-width: 0; }
+        .brand-mark { width: 38px; height: 38px; border-radius: 12px; }
+        .brand-name { font-size: 0.7rem; letter-spacing: 0.03em; }
+        .nav-actions { gap: 8px; }
+        .icon-btn, .user-toggle, .hamburger { width: 38px; height: 38px; }
+        .hero { padding-top: 42px; }
+        .hero-inner { gap: 24px; }
+        .hero-copy h1 {
+          font-size: 2.2rem;
+          line-height: 1.04;
+        }
+        .profile-card {
+          padding: 20px 16px 18px;
+          border-radius: 24px;
+        }
+        .profile-art {
+          width: 170px;
+          height: 170px;
+          border-width: 8px;
+        }
+        .meta {
+          flex-wrap: wrap;
+          gap: 6px;
+          font-size: 0.7rem;
+        }
+        .status-bar { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .status-item { padding: 12px 8px; }
+        .about-grid { gap: 22px; }
+        .about-photo { min-height: 340px; }
+        .avatar-box { height: 300px; border-radius: 24px; }
+        .info-list { grid-template-columns: 1fr; }
+        .video-card .video-body,
+        .blog-card .blog-body,
+        .social-card { padding: 16px; }
+        .section-head h2 { font-size: 2rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen" aria-live="polite">
+      <div class="loader" aria-label="Page loading">
+        <div class="loader-ring"></div>
+      </div>
+    </div>
+
+    <header>
+      <div class="nav-wrap">
+        <a href="#home" class="brand" aria-label="Rim Bahadur Oli home">
+          <span class="brand-mark">
+            <img src="./profile%20logo.jpeg" alt="Rim Bahadur Oli logo" />
+          </span>
+          <span class="brand-name">RIM BAHADUR OLI</span>
+        </a>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#video">Video</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">
+            <span aria-hidden="true">☾</span>
+          </button>
+          <button class="user-toggle" id="userPanelToggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Open user panel">
+            <span class="user-avatar">R</span>
+          </button>
+          <button class="hamburger" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-inner">
+          <div class="hero-copy reveal">
+            <span class="badge">Personal Portfolio</span>
+            <h1>Hello, I'm Rim Bahadur Oli</h1>
+            <p class="hero-subtitle">19 Years Old • From Rolpa, Nepal</p>
+            <p>
+              Welcome to my personal website. This is my digital space where I share my story,
+              videos, thoughts, and personal journey.
+            </p>
+            <div class="cta-row">
+              <a href="#about" class="primary-btn">Explore My Profile</a>
+              <a href="#contact" class="secondary-btn">Contact Me</a>
+            </div>
+            <div class="scroll-indicator" aria-label="Scroll down">
+              <span class="mouse" aria-hidden="true"></span>
+              <span>Scroll Down</span>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="profile-card">
+              <div class="profile-art" aria-label="Profile image">
+                <img src="./profile%20logo.jpeg" alt="Rim Bahadur Oli portrait" />
+              </div>
+              <h3>RIM BAHADUR OLI</h3>
+              <div class="meta">
+                <span>Rolpa, Nepal</span>
+                <span>•</span>
+                <span>19 Years Old</span>
+              </div>
+              <div class="status-bar">
+                <div class="status-item"><strong>19</strong><span>Years</span></div>
+                <div class="status-item"><strong>Personal</strong><span>Profile</span></div>
+                <div class="status-item"><strong>R</strong><span>Story</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Statistics">
+        <div class="container">
+          <div class="stats-grid reveal">
+            <div class="stat-card"><span class="stat-value" data-target="19">0</span><div class="stat-label">Years Old</div></div>
+            <div class="stat-card"><span class="stat-value" data-target="2064">0</span><div class="stat-label">Birth Year</div></div>
+            <div class="stat-card"><span class="stat-value" data-target="1">0</span><div class="stat-label">Place</div></div>
+            <div class="stat-card"><span class="stat-value" data-target="1">0</span><div class="stat-label">Personal Brand</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">About</span>
+            <h2>About Me</h2>
+            <p class="section-subtitle">Know more about Rim Bahadur Oli</p>
+          </div>
+
+          <div class="about-grid reveal">
+            <div class="about-photo" aria-label="About photo">
+              <div class="avatar-box">
+                <img src="./WhatsApp%20Image%202026-10-06%20at%209.39.21%20AM.jpeg" alt="Rim Bahadur Oli photo" />
+              </div>
+            </div>
+
+            <div class="about-copy">
+              <h3>Who I Am</h3>
+              <p>
+                My name is Rim Bahadur Oli. I am 19 years old and I was born in Rolpa, Nepal. This
+                website represents my personal identity, interests, experiences, videos, and journey.
+              </p>
+              <p>
+                I am building my digital presence to share my story, memories, and personal growth with the
+                world in a clean and meaningful way.
+              </p>
+
+              <div class="info-list">
+                <div class="info-card"><div class="info-icon">👤</div><div><span class="label">Name</span><strong>Rim Bahadur Oli</strong></div></div>
+                <div class="info-card"><div class="info-icon">🎂</div><div><span class="label">Age</span><strong id="ageValue">19 Years Old</strong></div></div>
+                <div class="info-card"><div class="info-icon">📅</div><div><span class="label">Date of Birth</span><strong id="dobValue">2064-02-15 B.S.</strong></div></div>
+                <div class="info-card"><div class="info-icon">📍</div><div><span class="label">Birthplace</span><strong>Rolpa, Nepal</strong></div></div>
+                <div class="info-card"><div class="info-icon">🌍</div><div><span class="label">Nationality</span><strong>Nepali</strong></div></div>
+                <div class="info-card"><div class="info-icon">✦</div><div><span class="label">Identity</span><strong>Rim Bahadur Oli</strong></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="journey">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Journey</span>
+            <h2>My Journey</h2>
+          </div>
+
+          <div class="journey-wrap reveal">
+            <div class="timeline">
+              <div class="timeline-item"><span class="timeline-label">Born</span><h3>2064 B.S.</h3><p>Rolpa, Nepal</p></div>
+              <div class="timeline-item"><span class="timeline-label">Growing Up</span><h3>Learning &amp; Discovering</h3><p>Personal experiences and learning shaped my path.</p></div>
+              <div class="timeline-item"><span class="timeline-label">Present</span><h3>Building My Identity</h3><p>Creating a personal space to share my story and digital presence.</p></div>
+              <div class="timeline-item"><span class="timeline-label">Future</span><h3>Learning &amp; Growth</h3><p>Continuing to grow, learn, and achieve new goals.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="video">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Videos</span>
+            <h2>Videos</h2>
+            <p class="section-subtitle">Moments, memories, and personal stories.</p>
+          </div>
+          <div class="video-grid reveal" id="videoGrid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="blog">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Blog</span>
+            <h2>My Blog</h2>
+            <p class="section-subtitle">Thoughts, stories and experiences</p>
+          </div>
+
+          <div class="blog-toolbar reveal">
+            <input id="blogSearch" type="search" placeholder="Search blog posts..." aria-label="Search blog posts" />
+          </div>
+
+          <div class="blog-grid reveal" id="blogGrid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Gallery</span>
+            <h2>My Gallery</h2>
+          </div>
+          <div class="gallery-grid reveal" id="galleryGrid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact-wrap reveal">
+            <div class="contact-grid">
+              <div class="contact-left">
+                <span class="eyebrow">Contact</span>
+                <h3>Let's Connect</h3>
+                <p>If you would like to connect with me, feel free to send a message.</p>
+
+                <form class="contact-form" id="contactForm" novalidate>
+                  <div class="field-row">
+                    <div>
+                      <label for="name">Full Name</label>
+                      <input id="name" name="name" type="text" placeholder="Your full name" />
+                    </div>
+                    <div>
+                      <label for="email">Email</label>
+                      <input id="email" name="email" type="email" placeholder="Your email address" />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+                  </div>
+
+                  <button class="primary-btn" type="submit">Send Message</button>
+                </form>
+              </div>
+
+              <div class="contact-info">
+                <div class="meta-box"><div class="icon">📍</div><div><small>Location</small><strong>Rolpa, Nepal</strong></div></div>
+                <div class="meta-box"><div class="icon">👤</div><div><small>Name</small><strong>Rim Bahadur Oli</strong></div></div>
+                <div class="meta-box"><div class="icon">📧</div><div><small>Email</small><strong><a href="mailto:olir4310@gmail.com">olir4310@gmail.com</a></strong></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="socials">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Connect</span>
+            <h2>Connect With Me</h2>
+          </div>
+          <div class="social-grid reveal" id="socialGrid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <span class="brand-mark" style="width:38px;height:38px;border-radius:12px;">
+                <img src="./profile%20logo.jpeg" alt="Rim Bahadur Oli brand logo" />
+              </span>
+              <span>RIM BAHADUR OLI</span>
+            </div>
+            <p class="footer-text">Personal Portfolio</p>
+          </div>
+
+          <div>
+            <h4 style="margin:0 0 14px; font-size:1.1rem;">Explore</h4>
+            <div class="footer-nav">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#video">Video</a>
+              <a href="#blog">Blog</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 style="margin:0 0 14px; font-size:1.1rem;">Social</h4>
+            <div class="social-row" id="footerSocials"></div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>© 2026 Rim Bahadur Oli. All Rights Reserved.</div>
+          <div>Made with ❤️ in Nepal</div>
+        </div>
+      </div>
+    </footer>
+
+    <aside class="user-panel" id="userPanel" aria-label="Quick access user panel">
+      <div class="panel-header">
+        <div class="panel-profile">
+          <div class="mini-avatar">R</div>
+        </div>
+        <button class="panel-close" id="closeUserPanel" type="button" aria-label="Close user panel">✕</button>
+      </div>
+      <div class="panel-body">
+        <div class="panel-links">
+          <a href="#home"><span>Home</span><span>→</span></a>
+          <a href="#about"><span>About</span><span>→</span></a>
+          <a href="#video"><span>Videos</span><span>→</span></a>
+          <a href="#blog"><span>Blog</span><span>→</span></a>
+          <a href="#contact"><span>Contact</span><span>→</span></a>
+        </div>
+        <div class="panel-socials" id="panelSocials"></div>
+      </div>
+    </aside>
+
+    <div class="modal" id="videoModal" aria-hidden="true">
+      <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+        <div class="modal-head">
+          <h3 id="videoModalTitle">Video</h3>
+          <button class="close-btn" type="button" data-close="videoModal" aria-label="Close video modal">✕</button>
+        </div>
+        <div class="modal-body">
+          <iframe class="video-frame" id="videoFrame" src="" title="Video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p id="videoModalDescription"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="blogModal" aria-hidden="true">
+      <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="blogModalTitle">
+        <div class="modal-head">
+          <h3 id="blogModalTitle">Blog</h3>
+          <button class="close-btn" type="button" data-close="blogModal" aria-label="Close blog modal">✕</button>
+        </div>
+        <div class="modal-body blog-article" id="blogModalContent"></div>
+      </div>
+    </div>
+
+    <div class="lightbox" id="galleryLightbox" aria-hidden="true">
+      <div class="lightbox-inner">
+        <button class="lightbox-btn prev" type="button" aria-label="Previous image">←</button>
+        <button class="lightbox-btn next" type="button" aria-label="Next image">→</button>
+        <button class="lightbox-btn close" type="button" aria-label="Close gallery image">✕</button>
+        <img class="lightbox-image" id="lightboxImage" src="" alt="Gallery preview" />
+      </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      const SOCIAL_LINKS = [
+        { name: 'Facebook', url: 'https://www.facebook.com/share/1EDwouFdbw/', icon: 'f' },
+        { name: 'TikTok', url: 'https://www.tiktok.com/@ramesholi570?_r=1&_t=ZS-9AJt6zjMwVg', icon: '♪' },
+        { name: 'Instagram', url: 'https://www.instagram.com/', icon: '◎' },
+        { name: 'Website', url: 'https://anamaction.com', icon: '◌' },
+        { name: 'YouTube', url: 'https://youtube.com/@user-nt7zp8ix9l?si=-1UWv7kTSvpOIxx2', icon: '▶' }
+      ];
+
+      const birthDate = new Date('2007-05-29T00:00:00');
+
+      function updateAge() {
+        const now = new Date();
+        let age = now.getFullYear() - birthDate.getFullYear();
+        const monthDifference = now.getMonth() - birthDate.getMonth();
+
+        if (monthDifference < 0 || (monthDifference === 0 && now.getDate() < birthDate.getDate())) {
+          age -= 1;
+        }
+
+        const ageValue = document.getElementById('ageValue');
+        if (ageValue) {
+          ageValue.textContent = `${age} Years Old`;
+        }
+      }
+
+      updateAge();
+
+      const VIDEOS = [];
+
+      const BLOG_POSTS = [
+        {
+          title: 'Welcome to My Personal Website',
+          category: 'Welcome',
+          date: '2026',
+          description: 'A short introduction to my personal space and the purpose behind this website.',
+          image: './profile%20logo.jpeg',
+          content: 'This website is my personal space where I can share my story, memories, thoughts, and digital identity. I am excited to build my presence and keep documenting the journey ahead.'
+        }
+      ];
+
+      const GALLERY_IMAGES = [
+        { src: './profile%20logo.jpeg', alt: 'Rim Bahadur Oli personal portrait and logo image for portfolio' },
+        { src: './WhatsApp%20Image%202026-10-06%20at%209.39.21%20AM.jpeg', alt: 'Rim Bahadur Oli portrait from Rolpa, Nepal' },
+        { src: './gallery.jpeg', alt: 'Rim Bahadur Oli gallery image in a natural outdoor setting' },
+        { src: './profile%20logo.jpeg', alt: 'Rim Bahadur Oli personal profile image' },
+        { src: './WhatsApp%20Image%202026-10-06%20at%209.39.21%20AM.jpeg', alt: 'Rim Bahadur Oli portrait showing personal identity and profile' },
+        { src: './gallery.jpeg', alt: 'Rim Bahadur Oli outdoor portrait for the personal gallery' },
+        { src: './profile%20logo.jpeg', alt: 'Rim Bahadur Oli profile logo and hero image' },
+        { src: './WhatsApp%20Image%202026-10-06%20at%209.39.21%20AM.jpeg', alt: 'Rim Bahadur Oli personal photo for portfolio gallery' }
+      ];
+
+      const state = { activeGalleryIndex: 0 };
+      const navMenu = document.getElementById('navMenu');
+      const menuToggle = document.getElementById('menuToggle');
+      const userPanel = document.getElementById('userPanel');
+      const userPanelToggle = document.getElementById('userPanelToggle');
+      const closeUserPanel = document.getElementById('closeUserPanel');
+      const themeToggle = document.getElementById('themeToggle');
+      const backToTop = document.getElementById('backToTop');
+      const toast = document.getElementById('toast');
+      const videoGrid = document.getElementById('videoGrid');
+      const blogGrid = document.getElementById('blogGrid');
+      const galleryGrid = document.getElementById('galleryGrid');
+      const socialGrid = document.getElementById('socialGrid');
+      const footerSocials = document.getElementById('footerSocials');
+      const panelSocials = document.getElementById('panelSocials');
+      const blogSearch = document.getElementById('blogSearch');
+
+      function setTheme(theme) {
+        const isDark = theme === 'dark';
+        document.body.classList.toggle('dark-theme', isDark);
+        themeToggle.innerHTML = isDark ? '<span aria-hidden="true">☀</span>' : '<span aria-hidden="true">☾</span>';
+        localStorage.setItem('rim-theme', theme);
+      }
+
+      const savedTheme = localStorage.getItem('rim-theme') || 'light';
+      setTheme(savedTheme);
+
+      themeToggle.addEventListener('click', () => {
+        const nextTheme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
+        setTheme(nextTheme);
+      });
+
+      menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+      });
+
+      userPanelToggle.addEventListener('click', () => {
+        const isOpen = userPanel.classList.contains('open');
+        userPanel.classList.toggle('open', !isOpen);
+        userPanelToggle.setAttribute('aria-expanded', String(!isOpen));
+      });
+
+      closeUserPanel.addEventListener('click', () => {
+        userPanel.classList.remove('open');
+        userPanelToggle.setAttribute('aria-expanded', 'false');
+      });
+
+      document.addEventListener('click', (event) => {
+        if (!userPanel.contains(event.target) && !userPanelToggle.contains(event.target)) {
+          userPanel.classList.remove('open');
+          userPanelToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      function showToast(message) {
+        toast.textContent = message;
+        toast.classList.add('show');
+        clearTimeout(showToast.timer);
+        showToast.timer = setTimeout(() => toast.classList.remove('show'), 2400);
+      }
+
+      function renderSocials(target, compact = false) {
+        target.innerHTML = SOCIAL_LINKS.map((item) => `
+          <a href="${item.url}" class="${compact ? 'social-mini' : 'social-btn'}" aria-label="${item.name}" title="${item.name}" target="_blank" rel="noreferrer noopener">
+            ${item.icon}
+          </a>
+        `).join('');
+      }
+
+      renderSocials(panelSocials);
+      renderSocials(footerSocials, true);
+
+      function renderVideos() {
+        videoGrid.innerHTML = VIDEOS.map((video, index) => `
+          <article class="video-card" data-index="${index}">
+            <div class="video-thumb" style="background-image:url('${video.thumbnail}'); background-size:cover; background-position:center;">
+              <button class="play" type="button" aria-label="Play ${video.title}">▶</button>
+            </div>
+            <div class="video-body">
+              <div class="video-topline"><span>${video.category}</span><span>${video.date}</span></div>
+              <h3>${video.title}</h3>
+              <p>${video.description}</p>
+              <div class="card-row"><span class="chip">Video</span></div>
+            </div>
+          </article>
+        `).join('');
+
+        videoGrid.querySelectorAll('.video-card').forEach((card) => {
+          card.addEventListener('click', () => {
+            openVideoModal(VIDEOS[Number(card.dataset.index)]);
+          });
+        });
+      }
+
+      function renderBlogs(filteredPosts = BLOG_POSTS) {
+        blogGrid.innerHTML = filteredPosts.map((post, index) => `
+          <article class="blog-card">
+            <div class="blog-thumb" style="background-image:url('${post.image}'); background-size:cover; background-position:center;"></div>
+            <div class="blog-body">
+              <div class="blog-topline"><span>${post.category}</span><span>${post.date}</span></div>
+              <h3>${post.title}</h3>
+              <p>${post.description}</p>
+              <div class="card-row">
+                <span class="chip">Read</span>
+                <button class="link-btn" type="button" data-index="${index}">Read More</button>
+              </div>
+            </div>
+          </article>
+        `).join('');
+
+        blogGrid.querySelectorAll('.link-btn').forEach((button) => {
+          button.addEventListener('click', () => {
+            const clickedIndex = Number(button.dataset.index);
+            const post = filteredPosts[clickedIndex];
+            if (post) {
+              const postIndex = BLOG_POSTS.findIndex((item) => item.title === post.title);
+              window.location.href = `blog.html?post=${postIndex >= 0 ? postIndex : 0}`;
+            }
+          });
+        });
+      }
+
+      function renderGallery() {
+        galleryGrid.innerHTML = GALLERY_IMAGES.map((image, index) => `
+          <figure class="gallery-item" data-index="${index}" aria-label="Open gallery image ${index + 1}">
+            <img class="gallery-thumb" src="${image.src}" alt="${image.alt}" loading="lazy" decoding="async" />
+            <button class="zoom" type="button" aria-label="View ${image.alt}">⤢</button>
+          </figure>
+        `).join('');
+
+        galleryGrid.querySelectorAll('.gallery-item').forEach((item) => {
+          item.addEventListener('click', () => {
+            openLightbox(Number(item.dataset.index));
+          });
+        });
+      }
+
+      function renderSocialSection() {
+        socialGrid.innerHTML = SOCIAL_LINKS.map((item) => `
+          <article class="social-card">
+            <div class="social-icon">${item.icon}</div>
+            <h4>${item.name}</h4>
+            <p>${item.name === 'Facebook' ? 'Connect and follow my updates.' : item.name === 'TikTok' ? 'Short-form moments and videos.' : item.name === 'Instagram' ? 'A glimpse into my life and moments.' : item.name === 'Website' ? 'Explore my online presence and work.' : 'My video stories and experiences.'}</p>
+            <a class="link-btn" href="${item.url}" target="_blank" rel="noreferrer noopener">Visit</a>
+          </article>
+        `).join('');
+      }
+
+      function openVideoModal(video) {
+        const modal = document.getElementById('videoModal');
+        const frame = document.getElementById('videoFrame');
+        const title = document.getElementById('videoModalTitle');
+        const description = document.getElementById('videoModalDescription');
+        title.textContent = video.title;
+        description.textContent = `${video.description} (${video.category}, ${video.date})`;
+        frame.src = video.url;
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+      }
+
+      function openBlogModal(blog) {
+        const index = BLOG_POSTS.findIndex((item) => item.title === blog.title);
+        window.location.href = `blog.html?post=${index >= 0 ? index : 0}`;
+      }
+
+      function openLightbox(index) {
+        const lightbox = document.getElementById('galleryLightbox');
+        const image = document.getElementById('lightboxImage');
+        state.activeGalleryIndex = index;
+        image.src = GALLERY_IMAGES[index].src;
+        image.alt = GALLERY_IMAGES[index].alt;
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+      }
+
+      function closeModal(id) {
+        const modal = document.getElementById(id);
+        if (modal) {
+          modal.classList.remove('open');
+          modal.setAttribute('aria-hidden', 'true');
+        }
+      }
+
+      document.querySelectorAll('[data-close]').forEach((btn) => {
+        btn.addEventListener('click', () => closeModal(btn.dataset.close));
+      });
+
+      document.getElementById('galleryLightbox').addEventListener('click', (event) => {
+        if (event.target.id === 'galleryLightbox') {
+          document.getElementById('galleryLightbox').classList.remove('open');
+        }
+      });
+
+      document.querySelector('.lightbox-btn.prev').addEventListener('click', () => {
+        const prevIndex = (state.activeGalleryIndex - 1 + GALLERY_IMAGES.length) % GALLERY_IMAGES.length;
+        openLightbox(prevIndex);
+      });
+
+      document.querySelector('.lightbox-btn.next').addEventListener('click', () => {
+        const nextIndex = (state.activeGalleryIndex + 1) % GALLERY_IMAGES.length;
+        openLightbox(nextIndex);
+      });
+
+      document.querySelector('.lightbox-btn.close').addEventListener('click', () => {
+        document.getElementById('galleryLightbox').classList.remove('open');
+      });
+
+      document.getElementById('contactForm').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !message) {
+          showToast('Please fill in all fields.');
+          return;
+        }
+
+        if (!/\S+@\S+\.\S+/.test(email)) {
+          showToast('Please enter a valid email address.');
+          return;
+        }
+
+        showToast('Message sent successfully!');
+        event.target.reset();
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+      const stats = document.querySelectorAll('.stat-value');
+      const animateStat = (stat) => {
+        const target = Number(stat.dataset.target);
+        const duration = 1000;
+        const start = performance.now();
+
+        function tick(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          const current = Math.floor(progress * target);
+          stat.textContent = current;
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+
+        requestAnimationFrame(tick);
+      };
+
+      const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateStat(entry.target);
+            statsObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.4 });
+
+      stats.forEach((stat) => statsObserver.observe(stat));
+
+      blogSearch.addEventListener('input', (event) => {
+        const term = event.target.value.trim().toLowerCase();
+        const filtered = BLOG_POSTS.filter((post) => 
+          post.title.toLowerCase().includes(term) ||
+          post.description.toLowerCase().includes(term) ||
+          post.category.toLowerCase().includes(term)
+        );
+        renderBlogs(filtered);
+      });
+
+      window.addEventListener('scroll', () => {
+        backToTop.classList.toggle('visible', window.scrollY > 260);
+      });
+
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      renderVideos();
+      renderBlogs();
+      renderGallery();
+      renderSocialSection();
+    </script>
+  </body>
+</html>
+
